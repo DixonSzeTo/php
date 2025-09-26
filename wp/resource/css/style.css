@@ -1,0 +1,148 @@
+.container{
+    padding-top: 10px;
+}
+
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+@keyframes animatetop{
+    from{
+        top:-300px;
+        opacity:0
+    }
+    to{
+        top:0;
+        opacity:1
+    }
+}
+
+.modal-dialog modal-lg {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+.modal-content {
+    border: 1px solid #888;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    margin-top: 0;
+}
+h5.modal-title {
+    font-size: 1.25rem;
+    color: #666;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.modal-header .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+.close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.modal-body {
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.modal-body p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #07a8ff;
+    border-color: #07a8ff;
+    display: block;
+    margin-left: 20px;
+
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.btn:focus, .btn:hover {
+    text-decoration: none;
+}
+h5,h1{
+    text-align: center;
+
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+.search-box{
+    float: right;
+    clear: both;
+    font-size: 18px;
+
+}
+
+
+td pre{
+    overflow: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    white-space: pre-wrap;
+}

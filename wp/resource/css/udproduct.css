@@ -1,0 +1,116 @@
+.container{
+    padding-top: 10px;
+}
+
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+@keyframes animatetop{
+    from{
+        top:-300px;
+        opacity:0
+    }
+    to{
+        top:0;
+        opacity:1
+    }
+}
+
+.modal-dialog modal-lg {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+
+}
+
+.modal-content {
+    border: 1px solid #888;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+
+}
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    margin-top: 0;
+}
+h5.modal-title {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.modal-body {
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.modal-body p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+input,select,textarea{
+    display: block;
+    width: 100%;
+    padding: 4px 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+}
+.form-group label {
+    font-size: 18px;
+}
+
+.modal-footer button{
+    border-radius:3px; 
+    background-color: lightgreen;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+}
+
+a button{
+    border-radius:3px; 
+    background-color: red;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: white;
+}
